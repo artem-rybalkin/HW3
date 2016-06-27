@@ -1,0 +1,133 @@
+/*обнуление стилей*/
+* {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+/*BODY*/
+body {
+	width: 1366px;
+	height: 950px;
+	font-family: Tahoma;
+	background: #f9f9f9;
+	
+}
+
+.maket {
+	width: 1060px;
+	height: 950px;
+	margin-left: 155px;
+	box-shadow: 0px 0px 0px 2px #dddddd;
+	background: #ffffff;
+}
+
+/*HEADER*/
+header {
+	margin-left: 47px;
+}
+.logo {
+	padding-top: 50px;
+	margin-bottom: 43px;
+	height: 40px;
+	width: 966px;
+	font-size: 40px;
+	
+}
+#menu {
+	height: 40px;
+	width: 966px;
+	
+	background: #515151;
+}
+.menu-line, .footer-line {
+
+	width: 145px;
+	height: 40px;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+#menu a {
+	color: white;
+
+}
+.menu-line:hover {
+	background-color: #464646;
+	border:1px solid #838383;
+	border-top-style: none;
+	border-bottom-style: none;
+	border-left-style: solid ;
+	border-right-style: solid;
+}
+
+	
+/*LEFT_MENU*/	 
+	
+.left_menu {
+	
+	width: 200px;
+	margin-left: 47px;
+	margin-top: 48px;
+
+}
+.left_menu_list {
+	display: block;
+	width: 200px;
+	color: black;
+	border: 1px solid #c8c8c8;
+	padding-left: 24px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.left_menu_list a {
+	
+	color: black;
+}
+
+.left_menu_list a:hover {
+	
+	padding-left: 12px;
+	background: #f9f9f9;
+}
+/*Content*/
+
+img {
+	float: right;
+	margin-top: 40px;
+	margin-right: 50px;
+
+}
+
+.text {
+	height: 140px;
+	/*width: 630px;*/
+	margin-left: 350px;
+	margin-top: 50px;
+	font-size: 14px;
+	margin-right: 50px;
+}
+
+/*FOOTER*/
+
+footer {
+	height: 40px;
+	width: 966px;
+	margin-right: 48px;
+	margin-left: 47px;
+	margin-top: 65px;
+	margin-bottom: 60px;
+	background: #e1e1e1;
+}
+
+.footer-line a {
+	color: black;
+}
+.footer-line a:hover {
+	text-decoration: underline;
+}
+#copywrite {
+	width: 200px;
+	padding-left: 350px;
+}
