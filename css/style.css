@@ -6,10 +6,14 @@
 a {
 	text-decoration: none;
 }
+ul {
+	list-style: none;
+}
+
 /*BODY*/
 body {
 	width: 1366px;
-	height: 950px;
+	/*height: 950px;*/
 	font-family: Tahoma;
 	background: #f9f9f9;
 	
@@ -17,7 +21,7 @@ body {
 
 .maket {
 	width: 1060px;
-	height: 950px;
+	height: 100%;
 	margin-left: 155px;
 	box-shadow: 0px 0px 0px 2px #dddddd;
 	background: #ffffff;
@@ -35,34 +39,41 @@ header {
 	font-size: 40px;
 	
 }
-#menu {
+.menu {
 	height: 40px;
 	width: 966px;
 	
 	background: #515151;
 }
-.menu-line, .footer-line {
 
+.menu ul {
+
+	display: block;
+    margin: 0;
+    padding: 0;
+    
+}
+.menu ul li {
+	float: left;
 	width: 145px;
 	height: 40px;
-	display: table-cell;
+	line-height: 40px;
 	text-align: center;
 	vertical-align: middle;
 }
-#menu a {
+.menu a {
+	display: block;
 	color: white;
-
+	height: 100%;
 }
-.menu-line:hover {
+
+.menu li:hover {
 	background-color: #464646;
-	border:1px solid #838383;
-	border-top-style: none;
-	border-bottom-style: none;
-	border-left-style: solid ;
-	border-right-style: solid;
+	outline:1px solid #838383;
+	outline-offset:-1px;
+
 }
 
-	
 /*LEFT_MENU*/	 
 	
 .left_menu {
@@ -72,25 +83,30 @@ header {
 	margin-top: 48px;
 
 }
-.left_menu_list {
-	display: block;
-	width: 200px;
-	color: black;
+.left_menu li {
+	width: 240px;
+	height: 40px;
 	border: 1px solid #c8c8c8;
-	padding-left: 24px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-.left_menu_list a {
+	border-bottom: none;
 	
-	color: black;
+	line-height: 40px;
+	
+}
+.left_menu li a {
+	color:black;
+	display: block;
+	height: 100%;
+}
+.left_menu li:last-child {
+	border-bottom: 1px solid #c8c8c8;
 }
 
-.left_menu_list a:hover {
+.left_menu a:hover {
 	
 	padding-left: 12px;
 	background: #f9f9f9;
 }
+
 /*Content*/
 
 img {
@@ -104,7 +120,7 @@ img {
 	height: 140px;
 	/*width: 630px;*/
 	margin-left: 350px;
-	margin-top: 50px;
+	margin-top: 180px;
 	font-size: 14px;
 	margin-right: 50px;
 }
@@ -116,18 +132,29 @@ footer {
 	width: 966px;
 	margin-right: 48px;
 	margin-left: 47px;
-	margin-top: 65px;
+	margin-top: 50px;
 	margin-bottom: 60px;
 	background: #e1e1e1;
 }
 
+.footer-line {
+	height: 40px;
+	width: 110px;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 40px;
+}
+
 .footer-line a {
+	display: block;
 	color: black;
+	
 }
 .footer-line a:hover {
 	text-decoration: underline;
 }
 #copywrite {
 	width: 200px;
-	padding-left: 350px;
+	padding-left: 300px;
 }
